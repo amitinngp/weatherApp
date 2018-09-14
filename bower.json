@@ -1,0 +1,32 @@
+{
+  "name": "com.amit.exercise.weatherapp",
+  "description": "This is application is Single Page Application For Weather Condition of 5 Cities and Sea Level of Next 5 Days",
+  "authors": [
+    "Amit Dubey"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "WeatherApp",
+    "SinglePage",
+    "Application"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-resource": "^1.7.3",
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "d3": "^5.5.0"
+   
+  }
+}

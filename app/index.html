@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherapp" class="no-js"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Weather App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+  
+  <div ng-view></div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  
+  <script src="./weatherapp.module.js"></script>
+  <script src="./dashboard/dashboard.module.js"></script>
+  <script src="./dashboard/dashboard.controller.js"></script>
+  <script src="./components/header/header-directive.js"></script>
+  <script src="./components/search/search-directive.js"></script>
+  <script src="./components/card/card-directive.js"></script>  
+  <script src="./components/component.module.js"></script>
+  <script src="./services/openweather.factory.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12 col-md-12 d-flex justify-content-center"> 
+               
+        <div class="col-12 col-md-6">
+            <div class="card shadow p-3 mb-5 bg-white rounded" ng-repeat="weatherdata in dctrl.weatherData">
+                <div class="card-header d-flex justify-content-center">{{weatherdata.name}}</div>
+                <div class="card-body">
+                    <!-- <div><img src="{{dctrl.iconURL+weatherdata.weather[0].icon+'.png'}}" alt="icon"></div> -->
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">Date</div>
+                            <div class="col-6 col-md-6">{{weatherdata.dt | date:'fullDate'}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <!-- <div class="col-6 col-md-6"><img src="{{dctrl.iconURL+weatherdata.weather[0].icon+'.png'}}" alt="icon"></div> -->
+                            <div class="col-6 col-md-6">{{weatherdata.weather[0].description |uppercase}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">Temprature</div>
+                            <div class="col-6 col-md-6">{{weatherdata.main.temp}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">Low Temprature</div>
+                            <div class="col-6 col-md-6">{{weatherdata.main.temp_min}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">High Temprature</div>
+                            <div class="col-6 col-md-6">{{weatherdata.main.temp_max}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">Humidity</div>
+                            <div class="col-6 col-md-6">{{weatherdata.main.humidity}}</div>
+                    </div>
+                    <div class="col-12 col-md-12 row">
+                            <div class="col-6 col-md-6">Wind</div>
+                            <div class="col-6 col-md-6">{{weatherdata.wind.speed}}</div>
+                    </div>
+                    
+                </div>
+                <div class="card-footer d-flex justify-content-end">Next</div>
+            </div>
+        </div>       
+    </div>
+</div>
