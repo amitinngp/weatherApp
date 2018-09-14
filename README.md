@@ -1,4 +1,4 @@
-# weatherApp
+# WeatherApp(In progress)
 # 1) Create package.json using npm command "npm init". 
 package name: (weatherapp) com.amit.exercise.weatherapp
 version: (1.0.0)
