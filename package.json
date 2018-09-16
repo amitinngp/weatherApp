@@ -46,6 +46,6 @@
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
     "less": "^3.7.1",
-    "protractor": "^4.0.9"
+    "protractor": "^5.4.1"
   }
 }
